@@ -8,6 +8,7 @@
     --dark-color:#000;
     --dark-transp-color:#00000085;
     --text-size:1rem;
+    --text-family:'Ubuntu', sans-serif;
     --space-size:1rem;
     --transition:0.5s;
     --border-radius_xm:1.25rem;

@@ -74,6 +74,21 @@
         & .numbers-content_quote{
             display: flex;
             justify-content: space-between;
+            & .number_quote{
+                text-align: center;
+                display: grid;
+                gap: calc(var(--space-size) * 0.55);
+                & h2{
+                    color: var(--primary-color);
+                    font-weight: bold;
+                    font-size: calc(var(--text-size) * 2);
+                }
+                & p{
+                    color: var(--secondary-color);
+                    font-weight: bold;
+                    font-size: calc(var(--text-size) * 1.25);
+                }
+            }
         }
     }
     & .form_quote{
@@ -85,6 +100,8 @@
         gap: calc(var(--space-size));
         & input,textarea{
             outline: none;
+            padding: calc(var(--space-size) * 0.75);
+            font-family: var(--text-family);
         }
     }
 }
