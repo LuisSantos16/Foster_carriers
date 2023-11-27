@@ -188,8 +188,32 @@
         padding: 0;
         background-color: var(--bg-secondary);
     }
+}
 
+@media(max-width:560px){
+    .container_header{
+        & .navbar{
+            & .logo_disbable-responsive{
+                & span{
+                    font-size: calc(var(--text-size) * 1.25);
+                }
+            }
+            & .lista-bar{
+                font-size: calc(var(--text-size) * 1.25);
+            }
+            & .sub_navbar{
+                & .menu_navbar{
+                    & a{
+                        padding: calc(var(--space-size) * 1.25);
+                    }
+                }
+            }
+        }
+    }
 
+    #listaid{
+        top: calc(var(--space-size) * 3.8125);
+    }
 }
 
 

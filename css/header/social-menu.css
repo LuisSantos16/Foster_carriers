@@ -30,3 +30,9 @@
         border-bottom-right-radius: var(--border-radius_xs);
     }
 }
+
+@media(max-width:560px){
+    .social-menu_responsive{
+        top: 35%;
+    }
+}
