@@ -1,0 +1,90 @@
+/* article about */
+.container_about{
+    margin-top: calc(var(--space-size) * 6.25);
+    display: flex;
+    justify-content: space-evenly;
+    & .img_about{
+        width: 500px;
+        position: relative;
+        & img{
+            width: 100%;
+        }
+        & h2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: var(--bg-tertiary);
+            color: var(--secondary-color);
+            width: 100%;
+            text-align: center;
+            padding: calc(var(--space-size) * 0.75);
+        }
+    }
+    & .content_about{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+        gap: calc(var(--space-size) * 2);
+        & h4{
+            color: var(--primary-color);
+            font-size: calc(var(--text-size) * 1.25);
+        }
+        & h2{
+            color: var(--secondary-color);
+            font-size: calc(var(--text-size) * 2.25);
+            width: 550px;
+        }
+        & p{
+            line-height: calc(var(--space-size) * 1.56);
+            width: 650px;
+            text-align: justify;
+        }
+        & .play-content_about{
+            display: flex;
+            align-items: center;
+            gap: calc(var(--space-size) * 1.125);
+            & a{
+                text-decoration: none;
+                background-color: var(--bg-tertiary);
+                color: var(--secondary-color);
+                padding: calc(var(--text-size) * 0.75);
+                border-radius: var(--border-radius_xm);
+            }
+            & h2{
+                font-size: calc(var(--text-size) * 1.25);
+            }
+        }
+    }
+}
+
+/* article quote */
+
+.container_quote{
+    margin-top: calc(var(--space-size) * 6.25);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    & .content_quote{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--space-size) * 2);
+        & .numbers-content_quote{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    & .form_quote{
+        width: 500px;
+        background-color: var(--bg-tertiary);
+        display: flex;
+        flex-direction: column;
+        padding: calc(var(--space-size) * 2);
+        gap: calc(var(--space-size));
+        & input,textarea{
+            outline: none;
+        }
+    }
+}

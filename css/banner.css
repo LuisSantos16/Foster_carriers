@@ -42,6 +42,7 @@
 
 @media(max-width:560px){
     .container_banner{
+        background-position: center center;
         height: 80%;
         & .content_banner{
             & h2{
