@@ -1,0 +1,32 @@
+
+.social-menu_responsive{
+    background-color: var(--bg-secondary);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    & a{
+        color: var(--light-color);
+        text-decoration: none;
+        padding: calc(var(--space-size) * 0.75);
+        transition: var(--transition);
+        &:hover{
+            background-color: var(--bg-primary);
+            transition: var(--transition);
+        }
+        & label{
+            cursor: pointer;
+        }
+    }
+}
+
+@media(max-width:1150px){
+    .social-menu_responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: var(--border-radius_xs);
+        border-bottom-right-radius: var(--border-radius_xs);
+    }
+}

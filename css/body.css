@@ -1,14 +1,17 @@
 :root{
-    --primary-color:#FF4800;
+    --primary-color:#c73a02;
     --secondary-color:#051A3B;
     --bg-primary:#002B71;
     --bg-secondary:#051A3B;
+    --bg-tertiary:#f15112;
     --light-color:#fff;
     --dark-color:#000;
-    --dark-transp-color:#00000025;
+    --dark-transp-color:#00000085;
     --text-size:1rem;
     --space-size:1rem;
     --transition:0.5s;
+    --border-radius_xm:1.25rem;
+    --border-radius_xs:0.625rem;
 }
 
 *{
@@ -18,5 +21,5 @@
 }
 
 body{
-    font-family: 'Mooli', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
