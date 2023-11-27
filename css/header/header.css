@@ -212,7 +212,7 @@
     }
 
     #listaid{
-        top: calc(var(--space-size) * 3.8125);
+        top: calc(var(--space-size) * 3.7275);
     }
 }
 
