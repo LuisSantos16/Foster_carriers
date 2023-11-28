@@ -336,6 +336,12 @@
                 & .info-box_services{
                     gap: calc(var(--space-size) * 0.9375);
                     padding: calc(var(--space-size) * 0.9375);
+                    & p{
+                        font-size: calc(var(--text-size) * 0.8125);
+                    }
+                    & a{
+                        font-size: calc(var(--text-size) * 1.25);
+                    }
                 }
             }
         }
