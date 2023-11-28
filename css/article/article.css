@@ -170,6 +170,7 @@
                 padding: var(--space-size);
                 & .fa-plane,.fa-ship,.fa-truck,.fa-box{
                     font-size: calc(var(--text-size) * 1.45);
+                    color: var(--secondary-color);
                 }
                 & h3{
                     color: var(--light-color);
@@ -190,6 +191,96 @@
                     font-weight: bold;
                     letter-spacing: 1px;
                 }
+            }
+        }
+    }
+}
+
+
+@media(max-width:1250px){
+    .container_about{
+        & .img_about{
+            width: 500px;
+        }
+        & .content_about{
+            width: 500px;
+            & h2,p{
+                width: 100%;
+            }
+        }
+    }
+
+    .container_quote{
+        & .content_quote{
+            width: 500px;
+        }
+    }
+
+    .container_services{
+        & .content_services{
+            & .box_services{
+                width: 240px;
+            }
+        }
+    }
+}
+
+@media(max-width:1050px){
+    .container_about{
+        padding: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+        & .content_about,.img_about{
+            width: 70%;
+            margin-top: 20px;
+        }
+    }
+
+    .container_quote{
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        & .content_quote,.form_quote{
+            width: 70%;
+            margin-top: 30px;
+        }
+    }
+
+    .container_services{
+        margin-top: 20px;
+        & .content_services{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            & .box_services{
+                width: 400px;
+                margin: 0px 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:620px){
+    .container_about{
+        & .content_about,.img_about{
+            width: 100%;
+        }
+    }
+
+    .container_quote{
+        & .content_quote,.form_quote{
+            width: 100%;
+        }
+    }
+
+    .container_services{
+        padding: 0;
+        & .content_services{
+            padding: 10px;
+            & .box_services{
+                width: 100%;
+
             }
         }
     }
