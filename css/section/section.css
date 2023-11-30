@@ -276,3 +276,60 @@
         }
     }
 }
+
+@media(max-width:700px){
+    .container_feature{
+        margin-top: calc(var(--space-size) * 3.125);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: calc(var(--space-size) * 1.25);
+        & .img_feature{
+            width: 90%;
+        }
+        & .content_feature{
+            width: 90%;
+            gap: 15px;
+            align-items: center;
+            & h2{
+                font-size: calc(var(--space-size) * 1.5625);
+                text-align: center;
+            }
+            & ul{
+                display: flex;
+                text-align: center;
+            }
+            & a{
+                width: 100%;
+            }
+        }
+    }
+    
+    .container_team{
+        margin-top: calc(var(--space-size) * 3.125);
+        gap: calc(var(--space-size) * 1.25);
+        & h2{
+            font-size: calc(var(--space-size) * 1.5625);
+            text-align: center;
+        }
+        & .teams_persons{
+            & .persons{
+                width: 100%;
+            }
+        }
+    }
+
+    .container_testimonials{
+        margin-top: calc(var(--space-size) * 3.125);
+        gap: calc(var(--space-size) * 1.25);
+        & h2{
+            font-size: calc(var(--space-size) * 1.5625);
+            text-align: center;
+        }
+        & .testimonials{
+            & .content_testimonials{
+                width: 100%;
+            }
+        }
+    }
+}
