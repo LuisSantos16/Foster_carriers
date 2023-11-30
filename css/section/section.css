@@ -1,0 +1,160 @@
+/* section - feature */
+.container_feature{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: calc(var(--space-size) * 6.25);
+    & .img_feature{
+        width: 500px;
+        & img{
+            width: 100%;
+        }
+    }
+    & .content_feature{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+        gap: calc(var(--space-size) * 2);
+        & h4{
+            color: var(--primary-color);
+            font-size: calc(var(--text-size) * 1.25);
+        }
+        & h2{
+            color: var(--secondary-color);
+            font-size: calc(var(--text-size) * 2.25);
+            width: 550px;
+        }
+        & p{
+            line-height: calc(var(--space-size) * 1.56);
+            width: 650px;
+            text-align: justify;
+        }
+        & ul{
+            list-style: none;
+            display: grid;
+            gap: calc(var(--space-size) * 1.25);
+        }
+        & a{
+            text-decoration: none;
+            text-align: center;
+            color: var(--light-color);
+            background-color: var(--bg-tertiary);
+            width: 150px;
+            padding: calc(var(--space-size) * 0.9375);
+            font-weight: bold;
+            border-radius: var(--border-radius_xm);
+            transition: var(--transition);
+            &:hover{
+                background-color: var(--bg-secondary);
+            }
+        }
+    }
+}
+
+/* section - teams */
+
+.container_team{
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    margin: auto;
+    margin-top: calc(var(--space-size) * 6.25);
+    gap: calc(var(--space-size) * 2);
+    & h2{
+        text-align: center;
+        color: var(--secondary-color);
+        font-size: calc(var(--text-size) * 2.25);
+    }
+    & h4{
+        text-align: center;
+        color: var(--primary-color);
+        font-size: calc(var(--text-size) * 1.25);
+    }
+    & .teams_persons{
+        display: flex;
+        justify-content: space-between;
+        & .persons{
+            width: 280px;
+            & .img_persons{
+                & img{
+                    width: 100%;
+                }
+            }
+            & .info_persons{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                min-height: 100px;
+                & .name-info_persons{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    transform: translateY(90%);
+                    width: 100%;
+                    transition: var(--transition);
+                    background-color: var(--bg-quaternary);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    & ul{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+                        gap: calc(var(--space-size) * 0.6);
+                        & a{
+                            text-decoration: none;
+                            color: var(--secondary-color);
+                            border: calc(var(--space-size) * 0.0625) solid var(--secondary-color);
+                            border-radius: 50%;
+                            padding: calc(var(--space-size) * 0.625);
+                            font-size: calc(var(--text-size) * 0.852);
+                            transition: var(--transition);
+                            &:hover{
+                                background-color: var(--bg-secondary);
+                                color: var(--light-color);
+                            }
+                        }
+                    }
+                }
+            }
+            & .info_persons:hover .name-info_persons{
+                transform: translateY(0);
+                z-index: 4;
+            }
+        }
+    }
+}
+
+/* section - testimonial */
+
+.container_testimonials{
+    margin: auto;
+    margin-top: calc(var(--space-size) * 6.25);
+    display: grid;
+    gap: calc(var(--space-size) * 2);
+    width: 1300px;
+    & h2{
+        text-align: center;
+        color: var(--secondary-color);
+        font-size: calc(var(--text-size) * 2.25);
+    }
+    & h4{
+        text-align: center;
+        color: var(--primary-color);
+        font-size: calc(var(--text-size) * 1.25);
+    }
+    & .testimonials{
+        & .content_testimonials{
+            width: 300px;
+            display: flex;
+            & .name-content_testimonials{
+                width: 100%;
+            }
+        }
+    }
+}

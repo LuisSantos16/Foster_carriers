@@ -17,9 +17,7 @@
             font-size: calc(var(--text-size) * 2);
             color: var(--primary-color);
         }
-        & h1{
-            font-size: calc(var(--text-size) * 3.125);
-        }
+        & h1{font-size: calc(var(--text-size) * 3.125);}
         & a{
             text-decoration: none;
             color: var(--light-color);
@@ -40,20 +38,17 @@
     }
 }
 
+@media(max-width:940px){
+    .container_banner{background-position: center center;}
+}
+
 @media(max-width:560px){
     .container_banner{
-        background-position: center center;
         height: 80%;
         & .content_banner{
-            & h2{
-                font-size: calc(var(--text-size) * 1.25);
-            }
-            & h1{
-                font-size: calc(var(--text-size) * 2.125);
-            }
-            & a{
-                font-size: calc(var(--text-size) * 0.85);
-            }
+            & h2{font-size: calc(var(--text-size) * 1.25);}
+            & h1{font-size: calc(var(--text-size) * 2.125);}
+            & a{font-size: calc(var(--text-size) * 0.85);}
         }
     }
 }

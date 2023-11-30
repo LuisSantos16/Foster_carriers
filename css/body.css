@@ -4,6 +4,7 @@
     --bg-primary:#002B71;
     --bg-secondary:#051A3B;
     --bg-tertiary:#f15112;
+    --bg-quaternary:#c73a02;
     --light-color:#fff;
     --dark-color:#000;
     --dark-transp-color:#00000085;
@@ -21,6 +22,4 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Ubuntu', sans-serif;
-}
+body{font-family: 'Ubuntu', sans-serif;}

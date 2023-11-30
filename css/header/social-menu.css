@@ -15,9 +15,7 @@
             background-color: var(--bg-primary);
             transition: var(--transition);
         }
-        & label{
-            cursor: pointer;
-        }
+        & label{cursor: pointer;}
     }
 }
 
@@ -32,7 +30,5 @@
 }
 
 @media(max-width:560px){
-    .social-menu_responsive{
-        top: 35%;
-    }
+    .social-menu_responsive{top: 35%;}
 }
