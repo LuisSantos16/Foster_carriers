@@ -279,7 +279,7 @@
 
 @media(max-width:700px){
     .container_feature{
-        margin-top: calc(var(--space-size) * 3.125);
+        margin-top: calc(var(--space-size) * 2.5);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -291,25 +291,27 @@
             width: 90%;
             gap: 15px;
             align-items: center;
+            gap: calc(var(--space-size) * 1.5);
+            & h4{font-size: calc(var(--text-size) * 0.9375);}
             & h2{
-                font-size: calc(var(--space-size) * 1.5625);
+                font-size: calc(var(--text-size) * 1.25);
                 text-align: center;
             }
+            & p{font-size: calc(var(--text-size) * 0.8125);}
             & ul{
                 display: flex;
                 text-align: center;
             }
-            & a{
-                width: 100%;
-            }
+            & a{width: 100%;}
         }
     }
     
     .container_team{
-        margin-top: calc(var(--space-size) * 3.125);
+        margin-top: calc(var(--space-size) * 2.5);
         gap: calc(var(--space-size) * 1.25);
+        & h4{font-size: calc(var(--text-size) * 0.9375);}
         & h2{
-            font-size: calc(var(--space-size) * 1.5625);
+            font-size: calc(var(--text-size) * 1.25);
             text-align: center;
         }
         & .teams_persons{
@@ -320,12 +322,14 @@
     }
 
     .container_testimonials{
-        margin-top: calc(var(--space-size) * 3.125);
+        margin-top: calc(var(--space-size) * 2.5);
         gap: calc(var(--space-size) * 1.25);
+        & h4{font-size: calc(var(--text-size) * 0.9375);}
         & h2{
-            font-size: calc(var(--space-size) * 1.5625);
+            font-size: calc(var(--text-size) * 1.25);
             text-align: center;
         }
+        & p{font-size: calc(var(--text-size) * 0.8125);}
         & .testimonials{
             & .content_testimonials{
                 width: 100%;
