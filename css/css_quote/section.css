@@ -1,0 +1,25 @@
+
+.container_services{
+    & .first_service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        & .img-first_service{
+            width: 850px;
+            & img{
+                width: 100%;
+                min-height: 80vh;
+                object-fit: cover;
+            }
+        }
+        & .content-first_service{
+            width: 850px;
+            min-height: 350px;
+            background-color: var(--bg-primary);
+            transform: translate(-20%); 
+            display: grid;
+            gap: 20px;
+        }
+    }
+}

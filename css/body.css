@@ -1,7 +1,7 @@
 :root{
     --primary-color:#c73a02;
     --secondary-color:#051A3B;
-    --tertiary-color:#3474a8;
+    --tertiary-color:#ff7038;
     --bg-primary:#002B71;
     --bg-secondary:#051A3B;
     --bg-primary-transp:#002b712f;
@@ -10,7 +10,7 @@
     --bg-quinary:#f0efef;
     --light-color:#fff;
     --dark-color:#000;
-    --dark-transp-color:#00000085;
+    --dark-transp-color:#000000a4;
     --text-size:1rem;
     --text-family:'Ubuntu', sans-serif;
     --space-size:1rem;
