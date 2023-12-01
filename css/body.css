@@ -1,6 +1,7 @@
 :root{
     --primary-color:#c73a02;
     --secondary-color:#051A3B;
+    --tertiary-color:#3474a8;
     --bg-primary:#002B71;
     --bg-secondary:#051A3B;
     --bg-primary-transp:#002b712f;
@@ -16,10 +17,6 @@
     --transition:0.5s;
     --border-radius_xm:1.25rem;
     --border-radius_xs:0.625rem;
-}
-
-html{
-    scroll-behavior:smooth;
 }
 
 *{
