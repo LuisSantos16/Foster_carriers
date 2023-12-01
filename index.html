@@ -14,6 +14,8 @@
 
     <!-- menu fijo | responsive tablet -->
     <link rel="stylesheet" href="./css/header/social-menu.css">
+
+    <link rel="stylesheet" href="./css/header/button-up.css">
     <!------------->
 
     <!-- google fonts -->
@@ -28,10 +30,10 @@
     <script src="https://kit.fontawesome.com/d70c66a935.js" crossorigin="anonymous"></script>
 
     <!-- estilo javascript -->
-    <script src="./js/menu.js"></script>
+    <script src="./js/javascript.js"></script>
 
 </head>
-<body>
+<body id="inicio">
     
     <!-- header -->
     <header class="container_header">
@@ -74,11 +76,11 @@
     
                 <div class="menu_navbar">
                     <a href="" class="active">Home</a>
-                    <a href="">About</a>
-                    <a href="">Service</a>
-                    <a href="">Teams</a>
-                    <a href="">Works</a>
-                    <a href="">Testimonials</a>
+                    <a href="#about">About</a>
+                    <a href="#service">Service</a>
+                    <a href="#teams">Teams</a>
+                    <a href="#works">Works</a>
+                    <a href="#information">Information</a>
                     <a href="" class="disble">Get a Quote</a>
                 </div>
                 <div class="contact">
@@ -97,7 +99,9 @@
         <a href="#"><label class="bi bi-twitter-x"></label></a>
         <a href="#"><label class="bi bi-whatsapp"></label></a>
     </div>
-    <!-- fin-social resonsive -->
+
+    <!-- boton subir -->
+    <a id="subir" href="#inicio"><i class="fa-solid fa-up-long"></i></a>
 
     <!-- banner -->
     <div class="container_banner">
@@ -108,6 +112,7 @@
         </div>
     </div>
 
+    <div id="about"></div>
     <!-- article - about us -->
     <article class="container_about">
         <figure class="img_about">
@@ -155,6 +160,7 @@
         </form>
      </article>
 
+     <div id="service"></div>
      <!-- article - services -->
      <article class="container_services">
         <h4>OUR SERVICES</h4>
@@ -221,6 +227,7 @@
         </div>
      </section>
 
+     <div id="teams"></div>
      <!-- section teams -->
      <section class="container_team">
         <h4>DELIVERY TEAM</h4>
@@ -297,6 +304,7 @@
         </div>
      </section>
 
+     <div id="testimonials"></div>
      <!-- section testimonials -->
      <section class="container_testimonials">
         <h4>Testimonial</h4>
@@ -356,6 +364,7 @@
         </div>
      </section>
 
+     <div id="information"></div>
      <!-- footer -->
      <footer class="container_footer">
         <div class="start-content_footer">
@@ -418,5 +427,33 @@
         </div>
      </footer>
 
+     <!-- scroll suavizado -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script>
+         $(document).ready(function(){
+         // Add smooth scrolling to all links
+         $("a").on('click', function(event) {
+         
+             // Make sure this.hash has a value before overriding default behavior
+             if (this.hash !== "") {
+             // Prevent default anchor click behavior
+             event.preventDefault();
+         
+             // Store hash
+             var hash = this.hash;
+         
+             // Using jQuery's animate() method to add smooth page scroll
+             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+             $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+             }, 800, function(){
+         
+                 // Add hash (#) to URL when done scrolling (default click behavior)
+                 window.location.hash = hash;
+             });
+             } // End if
+         });
+         });
+         </script>
 </body>
 </html>
