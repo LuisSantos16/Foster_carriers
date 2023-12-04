@@ -87,6 +87,10 @@ hr{
                     color: var(--primary-color);
                     font-weight: 700;
                     font-size: calc(var(--text-size) * 1.125);
+                    transition: var(--transition);
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
